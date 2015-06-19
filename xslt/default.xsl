@@ -155,9 +155,9 @@
                 <xsl:if test="$p&gt;0 or result/@pageId='106'">
                     <meta name="robots" content="noindex,follow"/>
                 </xsl:if>
-                <link rel="stylesheet" href="{$template-resources}/css/boilerplate.css"/>
-                <link rel="stylesheet" href="{$template-resources}/css/common.css"/>
-                <link rel="stylesheet" href="{$template-resources}/css/style.css"/>
+
+                <link rel="stylesheet" href="{$template-resources}/css/main_dist.css"/>
+
                 <link rel="stylesheet" href="{$template-resources}/css/jquery-ui.min.css"/>
                 <link rel="stylesheet" href="{$template-resources}/css/jquery.fancybox.css?v=2.1.5" media="screen" />
                 <link href="/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -283,6 +283,7 @@
                                 <li>
                                     <a href="#">Добавить объявление</a>
                                 </li> -->
+
                             </ul>
                         </nav>
                         <nav class="f-left">
