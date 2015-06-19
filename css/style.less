@@ -463,10 +463,11 @@ margin: 15px 0 0 0;
 	color: #9d9d9d;
 }
 .h-menu {
-    overflow: hidden;
-    margin: 13px 0 30px;
-    position: relative;
-        border-radius: 4px;
+overflow: hidden;
+  margin: 13px 0 30px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 999999;
     #short {
         display: block;
         tbody {
@@ -514,6 +515,8 @@ margin: 15px 0 0 0;
 	background-image: -o-linear-gradient(top, #d0d0d0, #9d9d9d 15px);
 	background-image: -moz-linear-gradient(top, #d0d0d0, #9d9d9d 15px);
 	background-image: linear-gradient(top, #d0d0d0, #9d9d9d 15px);
+    cursor: pointer;
+    width: auto;
 }
 
 .h-menu ul {
@@ -525,10 +528,36 @@ margin: 15px 0 0 0;
     text-align: right;
     display: block;
 }
-.h-menu ul.block {
-    display: none;
+.menu_wrapper{
     position: relative;
 }
+.menu_wrapper .block#more {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 29px;
+  border-radius: 0 0 5px 5px;
+  background-color: #249cc8;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#97d0e5),color-stop(15px,#249cc8));
+  background-image: -webkit-linear-gradient(top,#97d0e5,#249cc8 15px);
+  background-image: -webkit-linear-gradient(top, #97d0e5, #249cc8 15px);
+  background-image: linear-gradient(top,#97d0e5,#249cc8 15px);
+  list-style: none;
+  z-index: 99999;
+  padding: 15px;
+                a{
+
+                        display: list-item;
+                          color: #fff;
+                          margin: 10px 0 10px 0;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+            }
+
+}
+
 
 .header,
 .h-search{margin-bottom: 40px}
